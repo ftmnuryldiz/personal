@@ -1,0 +1,167 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header */
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Contact Info Section */
+  .contact-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-info h2 {
+    font-size: 2rem;
+    color: #4CAF50;
+    margin-bottom: 15px;
+  }
+  
+  .contact-info p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info a {
+    color: #4CAF50;
+    text-decoration: none;
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Social Media Section */
+  .social-media {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .social-media h2 {
+    font-size: 2rem;
+    color: #4CAF50;
+    margin-bottom: 15px;
+  }
+  
+  .social-media ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .social-media ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+  .social-media ul li a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .social-media ul li a:hover {
+    color: #4CAF50;
+  }
+  
+  /* Image Section */
+  .image-section {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .image-section img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .image-section img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Contact Me Section */
+  .contact-me {
+    background-color: #4CAF50;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    color: #fff;
+    margin-top: 40px;
+  }
+  
+  .contact-me h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .contact-me p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+  
+  .contact-button {
+    padding: 12px 20px;
+    background-color: #fff;
+    color: #4CAF50;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-radius: 25px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-button:hover {
+    background-color: #fff3d6;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+  
+    .contact-info,
+    .social-media,
+    .image-section,
+    .contact-me {
+      padding: 15px;
+    }
+  
+    .image-section img {
+      width: 200px;
+      height: 200px;
+    }
+  
+    .contact-button {
+      padding: 10px 18px;
+    }
+  }
+  

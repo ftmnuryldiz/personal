@@ -1,0 +1,208 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #fff7f0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Ana Sayfa: Sol taraf (profil foto) */
+.left-side {
+  flex: 1 1 40%;
+  background-color: #6ba48c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+/* Diğer Sayfalar: Yazılı içerik sol */
+.left {
+  flex: 1 1 50%;
+  padding: 60px;
+  background-color: #fff7f0;
+  color: #d24c3b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left h2 {
+  color: #4caf50;
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+.left p {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* Ana Sayfa: Sağ taraf (merhaba ve butonlar) */
+.right-side {
+  flex: 1 1 60%;
+  background-color: #fff;
+  padding: 40px;
+  text-align: center;
+}
+
+.right-side h1 {
+  font-size: 48px;
+  color: #3f6df2;
+  margin-bottom: 20px;
+}
+
+.right-side p {
+  font-size: 22px;
+  color: #56836f;
+  margin-bottom: 40px;
+}
+
+/* Diğer Sayfalar: Görsel sağ */
+.right {
+  flex: 1 1 50%;
+  background-color: #f07063;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.right img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Profil Fotoğrafı */
+.profile-img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 40%;
+  object-fit: cover;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Butonlar */
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.custom-btn {
+  flex: 1 1 calc(45% - 20px);
+  min-width: 140px;
+  max-width: 250px;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px 15px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 16px;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.custom-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.pink { background-color: #fcdde6; color: #8e2052; }
+.green { background-color: #c7f6b6; color: #2d5c2d; }
+.blue { background-color: #4437d3; color: #ffffff; }
+.purple { background-color: #6755d2; color: #ffffff; }
+.orange{
+  background-color:#f07063; color:#fcdde6;
+}
+.bordo{
+  background-color: #8e2052; color:#ffffff
+}
+/* Responsive Ayarlar */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-side,
+  .right-side,
+  .left,
+  .right {
+    flex: 1 1 100%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .profile-img {
+    max-width: 180px;
+  }
+
+  .right img {
+    max-width: 250px;
+  }
+
+  .left h2 {
+    font-size: 36px;
+  }
+
+  .right-side h1 {
+    font-size: 36px;
+  }
+
+  .right-side p {
+    font-size: 18px;
+  }
+
+  .custom-btn {
+    flex: 1 1 100%;
+  }
+}
+
+.job {
+  margin-bottom: 30px;
+  background-color: #fff;
+  border-left: 6px solid #4caf50;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  border-radius: 12px;
+}
+
+.job h3 {
+  font-size: 20px;
+  color: #1d3a2f;
+  margin-bottom: 10px;
+}
+
+.job p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.skills {
+  font-size: 18px;
+  color: #3f6df2;
+  margin-top: 30px;
+}
+
+  
+
+  

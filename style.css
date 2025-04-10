@@ -1,0 +1,304 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(to right, #4CAF83, #72d6a4);
+    min-height: 100vh;
+    padding: 40px 20px;
+  }
+  
+  /* Container */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Ortalanmış Başlık Alanı */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+  
+  .icon {
+    background-color: #f2a9e0;
+    padding: 12px;
+    font-size: 28px;
+    border-radius: 8px 0 0 8px;
+  }
+  
+  .title {
+    background-color: #f7d144;
+    padding: 15px 30px;
+    font-size: 28px;
+    font-weight: bold;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+/* Kartlar Alanı */
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  /* Sertifika Kartı */
+  .card {
+    background: linear-gradient(to bottom right, #fef7dc, #fff3d6);
+    border-radius: 30px;
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left; /* ya da center istersen */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #f7d144;
+  }
+  
+  
+  /* Sertifika Kartı */
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  }
+  
+  /* Kart Başlığı */
+  .card-title {
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-align: center;
+    color: #4CAF50;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  }
+  
+  /* Sertifika Listesi */
+  .cert-group {
+    margin-bottom: 25px;
+  }
+  
+  .cert-group h3 {
+    font-size: 16px;
+    color: #8e2052;
+    margin-bottom: 8px;
+  }
+  
+  .cert-group ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .cert-group ul li {
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #333;
+  }
+  
+  /* Kart İçindeki Butonlar */
+  .card button {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #fff3d6;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .card button:hover {
+    background-color: #ffe7a3;
+  }
+  .cert-group {
+    margin-bottom: 30px;
+    text-align: left;
+    padding: 20px;
+    border-left: 5px solid #f7d144;
+    background: #fffefa;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+  }
+  
+  .cert-group:hover {
+    transform: scale(1.01);
+  }
+  
+  .cert-group h3 {
+    color: #2c3e50;
+    font-size: 18px;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .cert-group h3::before {
+    content: "🎓";
+    margin-right: 8px;
+    font-size: 18px;
+  }
+  
+  .cert-group h4 {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-style: italic;
+  }
+  
+  .cert-group ul {
+    list-style-type: circle;
+    padding-left: 20px;
+  }
+  
+  .cert-group ul li {
+    margin-bottom: 6px;
+    font-size: 15px;
+    color: #333;
+    line-height: 1.5;
+  }
+  
+  
+  /* Genel Butonlar */
+  .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .custom-btn {
+    flex: 1 1 calc(45% - 20px);
+    min-width: 140px;
+    max-width: 250px;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 16px;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .custom-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Renk Temaları */
+  .pink { background-color: #fcdde6; color: #8e2052; }
+  .green { background-color: #c7f6b6; color: #2d5c2d; }
+  .blue { background-color: #4437d3; color: #ffffff; }
+  .purple { background-color: #6755d2; color: #ffffff; }
+  .orange { background-color:#f07063; color:#fcdde6; }
+  .bordo { background-color: #8e2052; color:#ffffff }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .icon, .title {
+      border-radius: 10px;
+      margin: 5px 0;
+    }
+  
+    .card {
+      width: 100%;
+    }
+  
+    .custom-btn {
+      flex: 1 1 100%;
+    }
+  }
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #FFD54F;
+    color: #2c2c2c;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 2rem;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .header-icons {
+    width: 150px;
+    margin-bottom: 1rem;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .images {
+    display: flex;
+    gap: 1rem;
+    flex: 1;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .images figure {
+    text-align: center;
+    width: 180px;
+  }
+  
+  .images img {
+    width: 100%;
+    border: 5px solid #fff;
+    border-radius: 20px;
+  }
+  
+  .description {
+    flex: 1;
+    min-width: 300px;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .description h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .description span {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .description p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+  
